@@ -1,5 +1,6 @@
 .app__aboutus {
   position: relative;
+  min-height: 100vh;
 }
 
 .app__aboutus-overlay {
@@ -34,6 +35,7 @@
 
 .app__aboutus-content_knife img {
   height: 1110px;
+  animation: fade-in 1.5s ease-in;
 }
 
 .app__aboutus-content_history {
@@ -51,6 +53,53 @@
   margin: 4rem 0;
   color: var(--color-grey);
 }
+
+
+/* Inserting animations into elements */
+/* elements of left column */
+.app__aboutus-content_about h1,
+.app__aboutus-content_about img,
+.app__aboutus-content_about p,
+.app__aboutus-content_about button {
+  animation: slide-in-from-left-side .9s ease-in;
+}
+.app__aboutus-content_history h1,
+.app__aboutus-content_history img,
+.app__aboutus-content_history p,
+.app__aboutus-content_history button {
+  animation: slide-in-from-right-side .9s ease-in;
+}
+
+
+/* Animations */
+@keyframes slide-in-from-right-side {
+  0% {
+    transform: translateX(1000%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-left-side {
+  0% {
+    transform: translateX(-1000%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 
 /* Tablet (Portrait) */
 @media screen and (max-width: 1024px) {
