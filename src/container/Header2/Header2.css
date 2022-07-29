@@ -1,0 +1,93 @@
+.app__header_2 {
+  background-color: var(--color-black);
+}
+
+.app__header_2-h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  /* line-height: 177px; */
+  font-size: 75px;
+}
+
+/* slide-in animations of the things in left column */
+#header_2__subheading,
+.app__wrapper_2_info h1,
+.app__wrapper_2_info p,
+.app__wrapper_2_info button {
+  animation: slide-in-from-left-side 1.45s ease-in;
+}
+/* slide-in animation of the image in right column */
+.app__wrapper_2_img img {
+  animation: slide-in-from-right-side 1.45s ease-in;
+}
+
+
+/* Animations */
+@keyframes slide-in-from-right-side {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-from-left-side {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes drop-and-fade-in {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Media Queries */
+/* Tablet (Portrait) */
+@media screen and (max-width: 1024px) {
+  .app__header_2-h1 {
+    font-size: 55px;
+  }
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 480px) {
+  .app__header_2-h1 {
+    font-size: 35px;
+  }
+  .app__wrapper_2_img img {
+    animation: fade-in 1.45s ease-in;
+  }
+  #header__subheading,
+  .app__wrapper_2_info h1,
+  .app__wrapper_2_info p,
+  .app__wrapper_2_info button {
+    animation: drop-and-fade-in 1.45s ease-in;
+  }
+}

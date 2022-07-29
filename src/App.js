@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
-import { Navbar } from './components';
+import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Header2, Intro, Laurels, SpecialMenu } from './container';
+import { Navbar, Navbar2 } from './components';
 import './App.css';
 
 const App = () => (
   <div>
-    <Navbar />
-    <Header />
+    <Navbar2 />
+    <Header2 />
     <AboutUs />
     <SpecialMenu />
     <Chef />
