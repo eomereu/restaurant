@@ -1,0 +1,50 @@
+.app__menuItem {
+  width: 100%;
+  margin: 1rem 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.app__menuItem-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__menuItem-dash {
+  height: 1px;
+  width: 90px;
+  background: var(--color-golden);
+  margin: 0 1rem;
+}
+
+.app__menuItem-sub {
+  /* width: 100%; */
+  margin: 0.2rem 0;
+}
+
+.app__menuItem-name {
+  flex: 1;
+}
+
+.app__menuItem-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Media Queries */
+/* Tablet (Portrait) */
+@media screen and (max-width: 1024px) {
+  
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 480px) {
+  .app__menuItem-sub {
+    margin: 0;
+  }
+  .app__menuItem {
+    margin: 0.3rem 0;
+  }
+}
