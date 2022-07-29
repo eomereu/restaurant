@@ -1,5 +1,4 @@
 import React from 'react';
-import { LoremIpsum } from 'react-lorem-ipsum';
 
 import { SubHeading } from '../../components'
 import { images } from '../../constants';

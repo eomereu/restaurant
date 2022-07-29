@@ -106,8 +106,11 @@
   .app__aboutus-content {
     flex-direction: column;
   }
-  .app__aboutus-content_knife {
-    display: none !important;
+  .app__aboutus-content_knife img {
+    /* display: none !important; */
+    transform: rotate(270deg);
+    height: 85vw;
+    margin: -9rem 0 -14rem 0;
   }
 }
 
@@ -116,9 +119,6 @@
   .app__aboutus-overlay img {
     width: 80%;
     height: 320px;
-  }
-  .app__aboutus-content_knife {
-    display: none !important;
   }
   .app__aboutus-content_history {
     margin-top: 3rem;
