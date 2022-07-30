@@ -1,5 +1,10 @@
 .app__header {
-  background-color: var(--color-black);
+  /* background-color: var(--color-black); */
+  background: rgba(0, 0, 0, 0.7) url("../../assets/headerbg.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-blend-mode: darken;
 }
 
 .app__header-h1 {

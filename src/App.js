@@ -6,8 +6,10 @@ import './App.css';
 
 const App = () => (
   <div>
-    <Navbar2 />
-    <Header2 />
+    <Navbar />
+    <Header />
+    {/* <Navbar2 />
+    <Header2 /> */}
     <AboutUs />
     <SpecialMenu />
     <Chef />
